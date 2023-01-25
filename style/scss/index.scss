@@ -1,6 +1,8 @@
 $color_1: #ebebeb;
 $color_2: #ffffff;
 $color_3: #ffdcc7;
+$blur_color_1: rgba(255, 255, 255, 0.05);
+$blur_color_2: rgba(255, 255, 255, 0.2);
 $font-family_1: thewitcher, sans-serif;
 $font-family_2: Caviar Dreams, sans-serif;
 $background-color_1: rgba(26, 22, 34, 0.7);
@@ -105,13 +107,16 @@ a {
 	justify-items: center;
 }
 .intro {
-	border-style: double;
-	border-radius: 150px;
+	border-color: $blur_color_2;
+	border-style: inset;
+	border-radius: 200px;
 	padding: 15px 0;
-	width: 800px;
-	border-width: 15px;
-	background-color: $background-color_1;
+	width: 750px;
+	border-width: 5px;
+	background-color: $blur_color_1;
 	margin: auto;
+	backdrop-filter: blur(2px);
+
 }
 h2 {
 	font-family: $font-family_2;
@@ -125,20 +130,36 @@ h2 {
 	grid-auto-flow: column;
 }
 .content-widget {
-	border-color: $border-color_1;
+	border-color: rgba(255, 255, 255, 0.2);
 	border-style: inset;
-	border-radius: 5px;
-	border-width: 5px;
-	background-color: $background-color_2;
+	border-radius: 15px;
+	border-width: 6px;
+	background-color: rgba(255, 255, 255, 0.05);
 	display: block;
 	overflow: hidden;
 	font-family: $font-family_2;
 	text-align: justify;
 	font-weight: bolder;
 	padding: 1.5%;
-	>p {
+	backdrop-filter: blur(10px);
+	color: $color_3;
+	box-shadow: 5px 5px 25px ° rgba(0, 0, 0, 0.1);
+	
+	>p, h3 {
 		margin: 1em 0;
+		text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 	}
+	>h3{
+		text-align: center;
+	}
+}
+.image{
+	height: 20px;
+	width: 20px;
 }
 .discord-widget {
 	grid-column-start: 1;

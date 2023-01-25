@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: thewitcher;
   src: url(/style/fonts/Thewitcher-jnOj.ttf);
@@ -122,13 +123,16 @@ a {
 }
 
 .intro {
-  border-style: double;
-  border-radius: 150px;
+  border-color: rgba(255, 255, 255, 0.2);
+  border-style: inset;
+  border-radius: 200px;
   padding: 15px 0;
-  width: 800px;
-  border-width: 15px;
-  background-color: rgba(26, 22, 34, 0.7);
+  width: 750px;
+  border-width: 5px;
+  background-color: rgba(255, 255, 255, 0.05);
   margin: auto;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
 }
 
 h2 {
@@ -145,20 +149,33 @@ h2 {
 }
 
 .content-widget {
-  border-color: #1a1622;
+  border-color: rgba(255, 255, 255, 0.2);
   border-style: inset;
-  border-radius: 5px;
-  border-width: 5px;
-  background-color: rgba(26, 22, 34, 0.85);
+  border-radius: 15px;
+  border-width: 6px;
+  background-color: rgba(255, 255, 255, 0.05);
   display: block;
   overflow: hidden;
   font-family: Caviar Dreams, sans-serif;
   text-align: justify;
   font-weight: bolder;
   padding: 1.5%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  color: #ffdcc7;
+  box-shadow: 5px 5px 25px ° rgba(0, 0, 0, 0.1);
 }
-.content-widget > p {
+.content-widget > p, .content-widget h3 {
   margin: 1em 0;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.content-widget > h3 {
+  text-align: center;
+}
+
+.image {
+  height: 20px;
+  width: 20px;
 }
 
 .discord-widget {
