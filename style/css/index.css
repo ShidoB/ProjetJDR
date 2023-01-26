@@ -2,10 +2,10 @@
 @font-face {
   font-family: thewitcher;
   src: url(/style/fonts/Thewitcher-jnOj.ttf);
-  @font-face {
-    font-family: Caviar Dreams;
-    src: url(/style/fonts/CaviarDreams.ttf);
-  }
+}
+@font-face {
+  font-family: Caviar Dreams;
+  src: url(/style/fonts/CaviarDreams.ttf);
 }
 @-webkit-keyframes spring {
   15% {
@@ -170,9 +170,10 @@ h2 {
   color: #ffdcc7;
   box-shadow: 5px 5px 25px ° rgba(0, 0, 0, 0.1);
 }
-.content-widget > p, .content-widget h3 {
+.content-widget > p {
   margin: 1em 0;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-size: 16px;
 }
 .content-widget > h3 {
   text-align: center;

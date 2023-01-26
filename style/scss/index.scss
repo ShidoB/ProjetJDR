@@ -12,10 +12,10 @@ $border-color_1: #1a1622;
 @font-face {
 	font-family: thewitcher;
 	src: url(/style/fonts/Thewitcher-jnOj.ttf);
+}
 @font-face {
 	font-family: Caviar Dreams;
 	src: url(/style/fonts/CaviarDreams.ttf);
-}
 }
 @keyframes spring {
 	15% {
@@ -153,13 +153,14 @@ h2 {
 	color: $color_3;
 	box-shadow: 5px 5px 25px ° rgba(0, 0, 0, 0.1);
 	
-	>p, h3 {
+	>p {
 		margin: 1em 0;
 		text-shadow:
 		-1px -1px 0 #000,
 		1px -1px 0 #000,
 		-1px 1px 0 #000,
 		1px 1px 0 #000;
+		font-size: 16px;
 	}
 	>h3{
 		text-align: center;
