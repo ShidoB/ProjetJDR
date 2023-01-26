@@ -2,6 +2,10 @@
 @font-face {
   font-family: thewitcher;
   src: url(/style/fonts/Thewitcher-jnOj.ttf);
+  @font-face {
+    font-family: Caviar Dreams;
+    src: url(/style/fonts/CaviarDreams.ttf);
+  }
 }
 @-webkit-keyframes spring {
   15% {
@@ -123,8 +127,8 @@ a {
 }
 
 .intro {
-  border-color: rgba(255, 255, 255, 0.2);
-  border-style: inset;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-style: double;
   border-radius: 200px;
   padding: 15px 0;
   width: 750px;
@@ -133,6 +137,7 @@ a {
   margin: auto;
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 }
 
 h2 {
@@ -150,7 +155,7 @@ h2 {
 
 .content-widget {
   border-color: rgba(255, 255, 255, 0.2);
-  border-style: inset;
+  border-style: groove;
   border-radius: 15px;
   border-width: 6px;
   background-color: rgba(255, 255, 255, 0.05);
