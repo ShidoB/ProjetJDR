@@ -124,6 +124,8 @@ a {
   color: #ffdcc7;
   padding: 30px 100px;
   justify-items: center;
+  font-family: Caviar Dreams, sans-serif;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 }
 
 .intro {
@@ -137,11 +139,6 @@ a {
   margin: auto;
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
-  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
-}
-
-h2 {
-  font-family: Caviar Dreams, sans-serif;
 }
 
 .sub-content {
@@ -161,7 +158,6 @@ h2 {
   background-color: rgba(255, 255, 255, 0.05);
   display: block;
   overflow: hidden;
-  font-family: Caviar Dreams, sans-serif;
   text-align: justify;
   font-weight: bolder;
   padding: 1.5%;
